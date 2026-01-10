@@ -1,0 +1,72 @@
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    /* border: 1px solid; */
+}
+
+.fs-7 {
+    font-size: .8rem;
+}
+
+.lh-2 {
+    line-height: .6;
+}
+
+.border-hover {
+    border: 1.5px solid transparent;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.border-hover:hover {
+    border: 1.5px solid #fff;
+}
+
+
+
+
+
+.band-1 {
+    height: 10vh;
+    background-color: #131921;
+    color: #fff;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.band-1 .input-cont select {
+    background-color: #E6E6E6;
+    color: #4c4d4d;
+    border-right: 1px solid #a5aaaa !important;
+}
+
+.band-1 .input-cont button {
+    background-color: #FEBD69;
+}
+
+.input-cont input {
+    outline: none;
+}
+
+.input-cont button {
+    padding: .35rem .6rem !important;
+    border: none;
+}
+
+.band-1 .lang select {
+    background-color: #131921;
+    color: #fff;
+}
+
+
+
+
+
+.band-2 {
+    background-color: #232F3E;
+    color: #fff;
+}
