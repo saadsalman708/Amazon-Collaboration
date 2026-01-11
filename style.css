@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav_item {
+    background-color: #131A22;
+    cursor: pointer;
+    color: whitesmoke;
+    /* margin: 30px; */
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 60px;
+}
+
+.navdiv1 {
+    display: flex;
+    gap: 10px;
+}
+
+.navdiv1 i {
+    margin-top: 12px;
+    font-size: 25px;
+}
+
+.search-box {
+    display: flex;
+    border: none;
+    /* border: 2px solid #facc15; */
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 500px;
+    height: 40px;
+}
+
+.search-box select {
+    max-width: 60px;
+    background: #e5e7eb;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+
+.search-box input {
+    width: 600px;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+
+.search-box button {
+    background: #facc15;
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.navdiv4 {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.navdiv4 img {
+    height: 20px;
+
+}
+
+.navdiv7 {
+    font-size: 23px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+
+/* ============================================================================ */
+.nav2 {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    color: whitesmoke;
+    background-color: #172b42;
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* =========================================================
+            ========= */
+.carddiv1 {
+    background-color: #f3f4f5;
+    width: 400px;
+         margin-top: 400px;
+margin-left: 10px;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.carddiv1 img {
+    height: 300px;
+    width: 300px;
+
+}
+
+.carddiv1 h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.carddiv1 p {
+    margin-top: 20px;
+    font-size: medium;
+
+}
+
+.carddiv1 p a {
+    text-decoration: none;
+}
+
+
+.carddiv {
+    cursor: pointer;
+     margin-top: 400px;
+  width: 320px;
+  background-color: #f3f4f5;
+  padding: 15px;
+}
+
+.carddiv h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.item img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.item p {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 15px;
+  /* color: #007185; */
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.card{
+display: flex;
+background-image: url(./assest/asset\ 1.jpeg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+width: 100%;
+gap: 20px;
+
+}
