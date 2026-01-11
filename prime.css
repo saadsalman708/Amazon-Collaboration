@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -34,7 +34,9 @@ html {
     border: 1.5px solid #fff;
 }
 
-i , select , img {
+i,
+select,
+img {
     cursor: pointer;
 }
 
@@ -96,27 +98,16 @@ a:hover {
 .band-2 {
     background-color: #232F3E;
     color: #fff;
+    height: 7vh;
 }
 
 
 
 
-.hero {
-    background-color: #131921;
-    height: 90vh;
-    height: 90dvh;
-    background: url(https://resizing.flixster.com/cSaTVG08tqRRGRzZIrvLeHZUQEs=/620x336/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p32095148_i_h10_aa.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.prime-video {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 800;
-}
 
 .sticky-nav {
-  margin-bottom: calc(-1 * 3rem) !important;
+    margin-bottom: calc(-1 * 3rem) !important;
+    z-index: 4;
 }
 
 .sticky-nav::before {
@@ -127,8 +118,8 @@ a:hover {
     z-index: -1;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.7);
-    filter: blur(8px); 
+    background: rgba(0, 0, 0, 0.7);
+    filter: blur(8px);
 }
 
 .sticky-nav span {
@@ -159,6 +150,24 @@ a:hover {
     color: #000;
 }
 
+
+
+
+
+.hero {
+    background-color: #131921;
+    height: 90vh;
+    height: 90dvh;
+    background: url('https://m.media-amazon.com/images/S/sonata-images-prod/SVOD_ROW_BeastGames_S2/503642e2-386d-454b-ac6a-fa60caaaec9f._UR1920,1080_.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.prime-video {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
 .profile {
     overflow: hidden;
     border: 5px solid transparent;
@@ -183,6 +192,21 @@ a:hover {
     transform: translateY(6px);
 }
 
+.hero .description {
+    position: relative !important;
+}
+
+.hero .description::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #000 30%, transparent 50%);
+    z-index: -1;
+}
+
 .detail span {
     color: #37F1A3;
 }
@@ -202,12 +226,31 @@ a:hover {
 
 
 
-.gallery-horizontal img {
-    transition: transform 0.3s ease-out;
+.gallery-horizontal .img-dark {
+    position: relative;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+    z-index: 1;
 }
 
-.gallery-horizontal img:hover {
+.gallery-horizontal .img-dark:hover {
     transform: scale(1.3);
+    z-index: 3;
+}
+
+.img-dark::after {
+    content: '';
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent 90%);
+    position: absolute !important;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.img-dark:hover::after {
+    background: transparent;
 }
 
 
@@ -242,7 +285,8 @@ footer .info button {
     padding: .5rem 1.4rem !important;
 }
 
-.more-on-amazon , .etc {
+.more-on-amazon,
+.etc {
     background-color: #131A22;
 }
 
