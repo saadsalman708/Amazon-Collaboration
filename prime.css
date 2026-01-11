@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
     margin: 0 !important;
     padding: 0 !important;
@@ -10,6 +14,10 @@
 
 .fs-7 {
     font-size: .8rem;
+}
+
+.fs-8 {
+    font-size: .72rem;
 }
 
 .lh-2 {
@@ -26,8 +34,16 @@
     border: 1.5px solid #fff;
 }
 
-i , select {
+i , select , img {
     cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .grey {
@@ -99,6 +115,10 @@ i , select {
   font-weight: 800;
 }
 
+.sticky-nav {
+  margin-bottom: calc(-1 * 3rem) !important;
+}
+
 .sticky-nav::before {
     content: '';
     position: absolute;
@@ -107,7 +127,7 @@ i , select {
     z-index: -1;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.7);
     filter: blur(8px); 
 }
 
@@ -167,14 +187,79 @@ i , select {
     color: #37F1A3;
 }
 
-.info::after {
+.hero .info::before {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 45vh;
-    background: linear-gradient(to top, rgb(0, 0, 0), transparent 90%);
+    height: 30vh;
+    background: linear-gradient(to top, rgb(0, 0, 0), transparent 99%);
     z-index: 1;
 }
 
+
+
+
+
+.gallery-horizontal img {
+    transition: transform 0.3s ease-out;
+}
+
+.gallery-horizontal img:hover {
+    transform: scale(1.3);
+}
+
+
+
+
+
+.back-to-top a {
+    background-color: #37475A;
+    color: #fff;
+    width: 100vw !important;
+}
+
+.back-to-top a:hover {
+    background-color: #485769;
+}
+
+.accessablity {
+    background-color: #232F3E;
+}
+
+.accessablity li {
+    opacity: .8;
+}
+
+footer .info {
+    background-color: #242F41;
+    border-top: 1px solid #3A475E;
+}
+
+footer .info button {
+    border: 1px solid #fff;
+    padding: .5rem 1.4rem !important;
+}
+
+.more-on-amazon , .etc {
+    background-color: #131A22;
+}
+
+.more-on-amazon div {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(140px, 1fr));
+    padding: 1rem 4rem !important;
+    padding-right: 7rem !important;
+    gap: .2rem 0 !important;
+}
+
+.more-on-amazon a {
+    color: #fff;
+    padding-right: 2.7rem !important;
+}
+
+.more-on-amazon a span:last-of-type {
+    color: #fff;
+    opacity: .5;
+}
