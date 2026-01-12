@@ -3,8 +3,19 @@
     background-color: #131921
 }
 
-.bg-panel {
+.bg-panel , .bg-panel-bottom {
     background-color: #232f3e
+}
+
+.bg-panel a , .bg-amazon img {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: .3rem 0;
+    background-color: transparent;
+}
+
+.bg-panel a:hover , .bg-amazon img:hover {
+    border: 1px solid #fff;
 }
 
 .bg-footer {
