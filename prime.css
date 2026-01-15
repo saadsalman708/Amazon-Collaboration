@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    font-family: 'Inter', sans-serif;
+    /* border: 1px solid; */
+}
+
+.fs-7 {
+    font-size: .8rem;
+}
+
+.fs-8 {
+    font-size: .72rem;
+}
+
+.lh-2 {
+    line-height: .6;
+}
+
+.border-hover {
+    border: 1.5px solid transparent;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.border-hover:hover {
+    border: 1.5px solid #fff;
+}
+
+i,
+select,
+img {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.grey {
+    background-color: #33373D;
+}
+
+
+
+
+
+.band-1 {
+    height: 10vh;
+    background-color: #131921;
+    color: #fff;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.band-1 .input-cont select {
+    background-color: #E6E6E6;
+    color: #4c4d4d;
+    border-right: 1px solid #a5aaaa !important;
+}
+
+.band-1 .input-cont button {
+    background-color: #FEBD69;
+}
+
+.input-cont input {
+    outline: none;
+}
+
+.input-cont button {
+    padding: .35rem .6rem !important;
+    border: none;
+}
+
+.band-1 .lang select {
+    background-color: #131921;
+    color: #fff;
+}
+
+
+
+
+
+.band-2 {
+    background-color: #232F3E;
+    color: #fff;
+    height: 7vh;
+}
+
+
+
+
+
+.sticky-nav {
+    margin-bottom: calc(-1 * 3rem) !important;
+    z-index: 4;
+}
+
+.sticky-nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    filter: blur(8px);
+}
+
+.sticky-nav span {
+    cursor: pointer;
+}
+
+.sticky-nav select {
+    background-color: transparent;
+    color: #fff;
+    letter-spacing: .1ch;
+    font-size: .85rem;
+    font-weight: 500;
+}
+
+.sticky-nav select:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.sticky-nav .right-icons {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+}
+
+.sticky-nav .right-icons:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+
+
+.hero {
+    background-color: #131921;
+    height: 90vh;
+    height: 90dvh;
+    background: url('https://m.media-amazon.com/images/S/sonata-images-prod/SVOD_ROW_BeastGames_S2/503642e2-386d-454b-ac6a-fa60caaaec9f._UR1920,1080_.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.prime-video {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+.profile {
+    overflow: hidden;
+    border: 5px solid transparent;
+}
+
+.profile:hover {
+    border: 5px solid #fff;
+}
+
+.profile div {
+    background-color: #466883;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.profile i {
+    font-size: 2rem;
+    transform: translateY(6px);
+}
+
+.hero .description {
+    position: relative !important;
+}
+
+.hero .description::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #000 30%, transparent 50%);
+    z-index: -1;
+}
+
+.detail span {
+    color: #37F1A3;
+}
+
+.hero .info::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30vh;
+    background: linear-gradient(to top, rgb(0, 0, 0), transparent 99%);
+    z-index: 1;
+}
+
+
+
+
+
+.gallery-horizontal .img-dark {
+    position: relative;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.gallery-horizontal .img-dark:hover {
+    transform: scale(1.3);
+    z-index: 3;
+}
+
+.img-dark::after {
+    content: '';
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent 90%);
+    position: absolute !important;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.img-dark:hover::after {
+    background: transparent;
+}
+
+
+
+
+
+.back-to-top a {
+    background-color: #37475A;
+    color: #fff;
+    width: 100vw !important;
+}
+
+.back-to-top a:hover {
+    background-color: #485769;
+}
+
+.accessablity {
+    background-color: #232F3E;
+}
+
+.accessablity li {
+    opacity: .8;
+}
+
+footer .info {
+    background-color: #242F41;
+    border-top: 1px solid #3A475E;
+}
+
+footer .info button {
+    border: 1px solid #fff;
+    padding: .5rem 1.4rem !important;
+}
+
+.more-on-amazon,
+.etc {
+    background-color: #131A22;
+}
+
+.more-on-amazon div {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(140px, 1fr));
+    padding: 1rem 4rem !important;
+    padding-right: 7rem !important;
+    gap: .2rem 0 !important;
+}
+
+.more-on-amazon a {
+    color: #fff;
+    padding-right: 2.7rem !important;
+}
+
+.more-on-amazon a span:last-of-type {
+    color: #fff;
+    opacity: .5;
+}
