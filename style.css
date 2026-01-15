@@ -166,9 +166,12 @@ body {
 
 .grid {
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin-top: 20px;
 =======
 >>>>>>> 0a3978fa814d6ad30f6921f13be9acef8321cc75
+=======
+>>>>>>> 25bab15fd8693ffb2a0d5c5fbeae477e5680afcb
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
@@ -189,13 +192,18 @@ body {
     display: inline-block;
     margin-top: 15px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /* color: #007185; */
 >>>>>>> 0a3978fa814d6ad30f6921f13be9acef8321cc75
+=======
+    /* color: #007185; */
+>>>>>>> 25bab15fd8693ffb2a0d5c5fbeae477e5680afcb
     text-decoration: none;
     font-size: 14px;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 /* ======================================================
          ===================================== */
@@ -441,6 +449,8 @@ body {
     font-size: 13px;
     color: #ddd;
 =======
+=======
+>>>>>>> 25bab15fd8693ffb2a0d5c5fbeae477e5680afcb
 .card {
     display: flex;
     background-image: url(./assest/asset\ 1.jpeg);
@@ -449,5 +459,8 @@ body {
     background-repeat: no-repeat;
     width: 100%;
     gap: 20px;
+<<<<<<< HEAD
 >>>>>>> 0a3978fa814d6ad30f6921f13be9acef8321cc75
+=======
+>>>>>>> 25bab15fd8693ffb2a0d5c5fbeae477e5680afcb
 }
